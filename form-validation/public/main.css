@@ -1,7 +1,13 @@
 form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
   margin: 20px;
   line-height: 25px;
+}
+
+button {
+  width: 20%;
+  position: relative;
+  top: 10px;
 }
