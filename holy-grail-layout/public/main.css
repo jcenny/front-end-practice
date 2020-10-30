@@ -1,0 +1,41 @@
+.container {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+header {
+  background: #ff6347;
+}
+
+footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+  flex: 1 100%;
+}
+
+.left {
+  background: gold;
+  flex: 1 100%;
+}
+
+.right {
+  background: hotpink;
+  flex: 1 100%;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3; }
+  .left    { order: 1; } 
+  .main    { order: 2; }
+  .right   { order: 3; }
+}
